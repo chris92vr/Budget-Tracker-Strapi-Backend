@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "expenses",
+  "info": {
+    "singularName": "expense",
+    "pluralName": "expenses",
+    "displayName": "expense",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "float"
+    },
+    "budget_id": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::budget.budget",
+      "inversedBy": "expenses"
+    }
+  }
+}

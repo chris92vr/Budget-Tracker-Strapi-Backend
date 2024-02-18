@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/budgets/countTotalAmount",
+      "handler": "budget.countTotalAmount",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budgets/countTotalMaxAmount",
+      "handler": "budget.countTotalMaxAmount",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
