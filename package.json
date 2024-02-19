@@ -19,6 +19,7 @@
     "@strapi/plugin-users-permissions": "4.20.0",
     "@strapi/strapi": "4.20.0",
     "better-sqlite3": "^8.6.0",
+    "cross-env": "^7.0.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "5.3.4",
@@ -28,6 +29,7 @@
     "node": ">=18.0.0 <=20.x.x",
     "npm": ">=6.0.0"
   },
+  "production": "cross-env NODE_ENV=production npm run build",
   "strapi": {
     "uuid": "633c7c3b-8b7e-41ed-ba2a-72b1a2283c2a"
   }
