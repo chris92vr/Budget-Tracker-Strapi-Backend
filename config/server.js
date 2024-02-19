@@ -7,4 +7,11 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
+  connection: {
+    client: 'sqlite',
+    connection: {
+      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+    },
+    useNullAsDefault: true,
+  },
 });
